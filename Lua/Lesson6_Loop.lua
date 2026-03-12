@@ -1,5 +1,8 @@
 
+--循环--
+
 print("********while循环*********")
+
 --while 条件 do 代码逻辑 end
 
 num = 5
@@ -10,7 +13,9 @@ while num > 0 do
 end
 
 
+
 print("********repeat until循环*********")
+
 --repeat 代码逻辑 until 跳出条件
 
 num = 5
@@ -21,7 +26,9 @@ repeat
 until num == 0
 
 
+
 print("********for循环*********")
+
 --lua里，i会默认递增
 
 for i = 1,5 do
