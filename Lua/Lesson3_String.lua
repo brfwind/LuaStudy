@@ -41,7 +41,7 @@ print(string.upper(str))
 print(string.lower(str))
 print(string.reverse(str))
 print(string.find(str,"cD"))
-print(string.sub(str,3))            --截取
+print(string.sub(str,3,5))          --截取
 print(string.rep(str,2))            --重复
 print(string.gsub(str,"ab","AB"))   --替换
 a = string.byte("Lua",1)            --字符转ASCII码

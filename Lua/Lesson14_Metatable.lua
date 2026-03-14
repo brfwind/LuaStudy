@@ -43,7 +43,7 @@ meta3 = {
 	__tostring = function()
 		return "nb"
 	end,
-	--当子表被当作一个函数被使用时，会默认调用这个__call的内容
+	--当子表被当作一个函数被使用时，会默认调用这个__call的内容--
 	--当希望传参数时，默认第一个参数是调用者自己
 	__call = function()
 		print("sb")
@@ -86,8 +86,8 @@ meta6 = {
 myTable6 = {}
 setmetatable(myTable6,meta6)
 
---__index 当子表中 找不到某一个属性时
---会到元表中 __index指定的表去找索引
+--__index 当子表中 找不到某一个属性时--
+--会到元表中 __index指定的表去找索引--
 
 print(myTable6.age)      --注：元表不是C#里的继承
                          --    这里没理由打印元表meta6里的age
@@ -103,7 +103,7 @@ print(rawget(myTable6,"age"))
 
 
 --newindex 当赋值时，如果赋值一个不存在的索引--
---那么会把这个值赋到newIndex所指的表中 不会修改自己
+--那么会把这个值赋到newIndex所指的表中 不会修改自己--
 meta7 = {}
 meta7.__newindex = {}
 myTable7 = {}
