@@ -54,10 +54,3 @@ print("********路径*********")
 
 --lua脚本加载路径
 print(package.path)
-
-function fun()
-	return 1,2,3,4
-end
-
-a,b,c,d = fun()
-print(a,b,c,d)
