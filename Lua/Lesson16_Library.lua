@@ -45,7 +45,7 @@ print(math.pow(2,2))
 math.randomseed(os.time())  --要先获取随机数种子，这里拿系统时间作为种子
 print(math.random(100))     --100以内
 
---开放
+--开方
 print(math.sqrt(4))
 
 
